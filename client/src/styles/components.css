@@ -1,0 +1,24 @@
+@layer components {
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4;
+  }
+
+  .btn-primary {
+    @apply bg-[var(--primary)] text-black px-4 py-2 rounded-xl font-medium transition;
+  }
+
+  .btn-primary:hover {
+    background-color: var(--primary-hover);
+  }
+
+  .card-custom {
+    @apply bg-[var(--card)] border border-[var(--border)] rounded-xl;
+  }
+
+  .input-custom {
+    @apply bg-[var(--card)] border border-[var(--border)] px-4 py-2 rounded-xl;
+  }
+
+}
+    
