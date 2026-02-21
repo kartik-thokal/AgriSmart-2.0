@@ -1,12 +1,12 @@
 import ProductCard from "../ui/ProductCard";
 
 // img
-import TomatoSeed from "../../assets/products/TomatoSeeds.png";
-import Organicfertilizer from '../../assets/products/Organicfertilizer.png'
-import Spray from '../../assets/products/Spray.png'
-import Drip from '../../assets/products/Drip.png'
+import TomatoSeed from "../../assets/seeds/TomatoSeeds.png";
+import Organicfertilizer from '../../assets/seeds/Organicfertilizer.png'
+import Spray from '../../assets/seeds/Spray.png'
+import Drip from '../../assets/seeds/Drip.png'
 
-const products = [
+const products = [ 
   {
     id: 1,
     name: "Hybrid Tomato Seeds",

@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { crops } from "../utils/cropData";
+import { crops } from "../../utils/cropData";
 
 const CropDetails = () => {
   const { cropName } = useParams();

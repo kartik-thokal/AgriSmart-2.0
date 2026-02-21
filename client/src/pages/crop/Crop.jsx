@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 // img
-import Soyabean from '../assets/images/soyabean.jpg'
-import Cotton from '../assets/images/cotton.jpg'
-import Wheat from '../assets/images/wheat.jpg'
-import Sugarcane from '../assets/images/sugarcane.jpg'
+import Soyabean from '../../assets/images/soyabean.jpg'
+import Cotton from '../../assets/images/cotton.jpg'
+import Wheat from '../../assets/images/wheat.jpg'
+import Sugarcane from '../../assets/images/sugarcane.jpg'
 
 
 const Crops = () => {
