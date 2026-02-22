@@ -16,7 +16,7 @@ function Seeds() {
               <img
                 src={pesticide.image}
                 alt={pesticide.name}
-                className="w-full h-[240px] object-cover"
+                className="w-full h-[240px] object-contain p-2 group-hover:scale-95 transition-transform duration-300"
               />
             </Link>
 
