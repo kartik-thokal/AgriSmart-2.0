@@ -2,16 +2,16 @@ import { useCart } from '../../context/CartContext'
 
 import { useParams } from "react-router-dom";
 import { useState } from "react";
-import ToolsData from "../../data/tootData";
+import irrigationData from "../../data/irrigationData";
 
 import DeliveryChecker from "../../components/ui/DeliveryChecker";
 
-function ToolsDetails() {
+function IrrigationDetails() {
 
   const { addToCart } = useCart();          
 
   const { id } = useParams();
-  const product = ToolsData.find((item) => item.id === Number(id));
+  const product = irrigationData.find((item) => item.id === Number(id));
 
   const [selectedSize, setSelectedSize] = useState(
     product?.sizes?.[0]
@@ -41,7 +41,7 @@ function ToolsDetails() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
 
         {/* IMAGE */}
-        <div className="bg-white  rounded-xl shadow-md dark:shadow-gray-900/40 p-8 flex justify-center transition">
+        <div className="bg-white dark:bg-gray-900 rounded-xl shadow-md dark:shadow-gray-900/40 p-8 flex justify-center transition">
           <img
             src={product.image}
             alt={product.name}
@@ -186,4 +186,4 @@ function ToolsDetails() {
   );
 }
 
-export default ToolsDetails;
+export default IrrigationDetails;

@@ -15,6 +15,9 @@ import PesticideDetails from "../pages/products/PesticideDetails";
 import Tools from "../pages/products/Tools";
 import ToolsDetails from "../pages/products/ToolsDetails";
 
+import Irrigation from "../pages/products/Irrigation";
+import IrrigationDetails from "../pages/products/IrrigationDetails";
+
 import Cart from "../pages/Cart";
 import Categories from "../components/home/Categories";
 
@@ -37,6 +40,8 @@ const AppRoutes = () => {
       <Route path="/pesticide/:id" element={<PesticideDetails />} />
       <Route path="/tools" element={<Tools />} />
       <Route path="/tools/:id" element={<ToolsDetails />} />
+      <Route path="/irrigation" element={<Irrigation />} />
+      <Route path="/irrigation/:id" element={<IrrigationDetails />} />
     </Routes>
   );
 };

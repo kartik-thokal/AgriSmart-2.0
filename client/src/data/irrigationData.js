@@ -1,3 +1,12 @@
+import DripIrrigation from '../assets/irrigation/DripIrrigation.jpg'
+import DripPipe from '../assets/irrigation/DripPipe.jpg'
+import HDPEPipe from '../assets/irrigation/HDPEPipe.jpg'
+import MicroSprinkler from '../assets/irrigation/MicroSprinkler.jpg'
+import SubmersiblePump from '../assets/irrigation/SubmersiblePump.jpg'
+import TimerController from '../assets/irrigation/TimerController.jpg'
+import WaterFilter from '../assets/irrigation/WaterFilter.jpg'
+import WaterTank from '../assets/irrigation/WaterTank.jpg'
+
 const irrigationData = [
   {
     id: 1,
@@ -33,9 +42,9 @@ const irrigationData = [
   },
   {
     id: 2,
-    name: "Sprinkler Irrigation System",
+    name: "Drip Pipe",
     price: 18000,
-    image: SprinklerIrrigation,
+    image: DripPipe,
     description:
       "Efficient sprinkler irrigation system that distributes water evenly across the field, simulating natural rainfall. It supports uniform crop growth, reduces soil erosion, and is suitable for a wide range of crops including cereals, vegetables, and lawns. Designed for durability and consistent performance in various soil conditions.",
 
@@ -170,9 +179,9 @@ const irrigationData = [
   },
   {
     id: 7,
-    name: "Rain Hose Pipe",
+    name: "Drip Water Filter",
     price: 5000,
-    image: RainHose,
+    image: WaterFilter,
     description:
       "Flexible rain hose pipe designed to provide uniform water distribution through fine spray holes along its length. Ideal for closely spaced crops and vegetable farming, it ensures even irrigation coverage while reducing water consumption and operational costs.",
 

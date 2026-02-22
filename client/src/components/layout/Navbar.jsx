@@ -16,7 +16,7 @@
     { name: "Fertilizers", path: "/fertilizer" },
     { name: "Pesticides", path: "/pesticide" },
     { name: "Tools", path: "/tools" },
-    { name: "Irrigation", path: "/products?category=irrigation" },
+    { name: "Irrigation", path: "/irrigation" },
     { name: "Weather", path: "/weather" },
     { name: "Crop Information", path: "/crops" },
   ];
