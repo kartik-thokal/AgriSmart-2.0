@@ -6,7 +6,7 @@ function Cart() {
   const { cartItems } = useCart();
 
   return (
-    <div className="max-w-[1400px] mx-auto px-4 py-10">
+    <div className="max-w-[1400px] mx-auto px-4 py-10 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
 
         <div className="lg:col-span-2 space-y-6">

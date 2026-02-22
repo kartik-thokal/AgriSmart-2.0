@@ -13,8 +13,8 @@
 
     const navCategories = [
     { name: "Seeds", path: "/seeds" },
-    { name: "Fertilizers", path: "/products?category=fertilizers" },
-    { name: "Pesticides", path: "/products?category=pesticides" },
+    { name: "Fertilizers", path: "/fertilizer" },
+    { name: "Pesticides", path: "/pesticide" },
     { name: "Tools", path: "/products?category=tools" },
     { name: "Irrigation", path: "/products?category=irrigation" },
     { name: "Weather", path: "/weather" },

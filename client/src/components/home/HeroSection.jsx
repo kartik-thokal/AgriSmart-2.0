@@ -1,5 +1,5 @@
 import LandingImg from "../../assets/images/landing.png";
-
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -19,9 +19,13 @@ const HeroSection = () => {
           </p>
 
           <div className="mt-8 flex gap-4">
-            <button className="px-6 py-3 bg-green-600 text-black font-semibold rounded-xl hover:bg-green-500 transition">
+
+            <Link to="/categories">
+              <button className="px-6 py-3 bg-green-600 text-black font-semibold rounded-xl hover:bg-green-500 transition">
               Shop Now
             </button>
+            </Link>
+            
 
             <button className="px-6 py-3 border border-green-600 text-green-600 dark:text-green-500 rounded-xl hover:bg-green-100 dark:hover:bg-gray-800 transition">
               Learn More

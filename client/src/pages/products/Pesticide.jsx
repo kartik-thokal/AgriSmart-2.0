@@ -1,42 +1,41 @@
 import { Link } from "react-router-dom";
-import seedsData from "../../data/seedsData";
+import pesticideData from "../../data/pesticideData";
 import { useCart } from '../../context/CartContext'
 function Seeds() {
   const { addToCart } = useCart();
   return (
     <div>
-      <h1 className="text-3xl font-bold mb-8">Seeds</h1>
+      <h1 className="text-3xl font-bold mb-8">Pesticide</h1>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-        {seedsData.map((seed) => (
+        {pesticideData.map((pesticide) => (
           <div
-            key={seed.id}
+            key={pesticide.id}
             className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md overflow-hidden hover:shadow-xl transition h-[400px] flex flex-col"          >
-            <Link to={`/seeds/${seed.id}`}>
+            <Link to={`/pesticide/${pesticide.id}`}>
               <img
-                src={seed.image}
-                alt={seed.name}
-                // Changed object-cover to object-contain and added a light background
-                className="w-full h-[240px] object-contain bg-gray-50 dark:bg-gray-900"
+                src={pesticide.image}
+                alt={pesticide.name}
+                className="w-full h-[240px] object-cover"
               />
             </Link>
 
             <div className="p-4 flex flex-col flex-grow">
               <h2 className="text-lg font-semibold">
-                {seed.name}
+                {pesticide.name}
               </h2>
 
               <p className="text-green-600 font-bold mt-2">
-                ₹ {seed.price}
+                ₹ {pesticide.price}
               </p>
 
               <button
                 onClick={() =>
                   addToCart({
-                    id: `${seed.id}-default`,
-                    name: seed.name,
-                    price: seed.price,
-                    image: seed.image,
+                    id: `${pesticide.id}-default`,
+                    name: pesticide.name,
+                    price: pesticide.price,
+                    image: pesticide.image,
                     size: "Default",
                     quantity: 1,
                   })

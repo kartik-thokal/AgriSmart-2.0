@@ -4,9 +4,8 @@ function OrderSummary() {
   const { totalAmount } = useCart();
 
   return (
-    <div className="bg-white rounded-xl shadow p-6">
-
-      <h2 className="text-xl font-semibold mb-6">
+    <div className="bg-white dark:bg-gray-800 rounded-xl shadow p-6 text-gray-900 dark:text-gray-100">
+      <h2 className="text-xl font-semibold mb-4">
         Order Summary
       </h2>
 

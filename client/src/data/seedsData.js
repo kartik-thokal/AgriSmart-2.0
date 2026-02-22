@@ -7,7 +7,9 @@ import Sunflower from '../assets/seeds/sunflower.png'
 import Barley from '../assets/seeds/barley.jpg'
 import Millet from '../assets/seeds/millet.jpg'
 import Jawar from '../assets/seeds/jawar.jpg'
-
+// import Jawar from '../assets/seeds/jawar.jpg'
+import Mustard from '../assets/seeds/mustard.png'
+import MuskMelon from '../assets/seeds/muskmelon.jpg'
 
 const seedsData = [
   {
@@ -344,7 +346,7 @@ const seedsData = [
     id: 11,
     name: "Mustard Seeds",
     price: 1000,
-    // image: Mustard,
+    image: Mustard,
     description:
       "High-yield mustard seeds suitable for oil extraction and commercial farming. These seeds ensure quick germination, strong plant growth, and better resistance to pests, delivering improved oil recovery and crop performance.",
 
@@ -375,9 +377,9 @@ const seedsData = [
   },
   {
     id: 12,
-    name: "Chickpea Seeds",
+    name: "Musk Melon Seeds",
     price: 1250,
-    // image: Chickpea,
+    image: MuskMelon,
     description:
       "Quality chickpea seeds known for uniform plant growth and high protein content. These seeds are resistant to common diseases and provide excellent yield potential, making them ideal for both domestic consumption and market sales.",
 

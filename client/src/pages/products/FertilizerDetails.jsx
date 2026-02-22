@@ -2,16 +2,16 @@ import { useCart } from '../../context/CartContext'
 
 import { useParams } from "react-router-dom";
 import { useState } from "react";
-import seedsData from "../../data/seedsData";
+import fertilizerData from "../../data/fertilizerData";
 
 import DeliveryChecker from "../../components/ui/DeliveryChecker";
 
-function SeedDetails() {
+function FertilizerDetails() {
 
-  const { addToCart } = useCart();
+  const { addToCart } = useCart();          
 
   const { id } = useParams();
-  const product = seedsData.find((item) => item.id === Number(id));
+  const product = fertilizerData.find((item) => item.id === Number(id));
 
   const [selectedSize, setSelectedSize] = useState(
     product?.sizes?.[0]
@@ -164,7 +164,7 @@ function SeedDetails() {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-y-4 text-gray-700 dark:text-gray-300">
-          <div><strong>Category:</strong> Seeds</div>
+          <div><strong>Category:</strong> FertilizerD</div>
           <div><strong>Brand:</strong> {product.brand}</div>
           <div><strong>Availability:</strong> In Stock</div>
           <div><strong>Delivery:</strong> 3-5 Working Days</div>
@@ -186,4 +186,4 @@ function SeedDetails() {
   );
 }
 
-export default SeedDetails;
+export default FertilizerDetails;
