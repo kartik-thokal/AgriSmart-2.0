@@ -13,7 +13,7 @@ function Seeds() {
             key={pesticide.id}
             className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md overflow-hidden hover:shadow-xl transition h-[400px] flex flex-col group"
           >
-            <Link to={`/fertilizer/${pesticide.id}`} className="bg-white">
+            <Link to={`/pesticide/${pesticide.id}`} className="bg-white">
               <img
                 src={pesticide.image}
                 alt={pesticide.name}

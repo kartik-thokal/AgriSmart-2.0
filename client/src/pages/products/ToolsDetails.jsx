@@ -2,16 +2,16 @@ import { useCart } from '../../context/CartContext'
 
 import { useParams } from "react-router-dom";
 import { useState } from "react";
-import PesticideData from "../../data/pesticideData";
+import ToolsData from "../../data/tootData";
 
 import DeliveryChecker from "../../components/ui/DeliveryChecker";
 
-function PesticideDetails() {
+function ToolsDetails() {
 
   const { addToCart } = useCart();          
 
   const { id } = useParams();
-  const product = PesticideData.find((item) => item.id === Number(id));
+  const product = ToolsData.find((item) => item.id === Number(id));
 
   const [selectedSize, setSelectedSize] = useState(
     product?.sizes?.[0]
@@ -164,8 +164,8 @@ function PesticideDetails() {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-y-4 text-gray-700 dark:text-gray-300">
-          <div><strong>Category:</strong> Fertilizer</div>
-          <div><strong>Brand:</strong>ABC</div>
+          <div><strong>Category:</strong> FertilizerD</div>
+          <div><strong>Brand:</strong> {product.brand}</div>
           <div><strong>Availability:</strong> In Stock</div>
           <div><strong>Delivery:</strong> 3-5 Working Days</div>
         </div>
@@ -186,4 +186,4 @@ function PesticideDetails() {
   );
 }
 
-export default PesticideDetails;
+export default ToolsDetails;

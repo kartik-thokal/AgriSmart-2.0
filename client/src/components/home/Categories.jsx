@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 const categories = [
   { id: 1, name: "Seeds", icon: "🌱", path: "/seeds" },
-  { id: 2, name: "Fertilizers", icon: "🧪", path: "/products?category=fertilizers" },
-  { id: 3, name: "Pesticides", icon: "🐛", path: "/products?category=pesticides" },
+  { id: 2, name: "Fertilizers", icon: "🧪", path: "/fertilizer" },
+  { id: 3, name: "Pesticides", icon: "🐛", path: "/pesticide" },
   { id: 4, name: "Tools", icon: "🛠️", path: "/products?category=tools" },
   { id: 5, name: "Irrigation", icon: "💧", path: "/products?category=irrigation" },
   { id: 6, name: "Smart Equipment", icon: "🚜", path: "/products?category=smart-equipment" },
