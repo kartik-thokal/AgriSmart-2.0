@@ -1,4 +1,4 @@
-import Insecticide from '../assets/pesticide/insecticide.jpg'
+import Insecticide from '../assets/pesticide/Insecticide.jpg'
 import Herbicide from '../assets/pesticide/herbicide.jpg'
 import Fungicide from '../assets/pesticide/fungicide.jpg'
 import Rodenticide from '../assets/pesticide/rodenticide.jpg'
