@@ -11,12 +11,13 @@ function Seeds() {
         {pesticideData.map((pesticide) => (
           <div
             key={pesticide.id}
-            className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md overflow-hidden hover:shadow-xl transition h-[400px] flex flex-col"          >
-            <Link to={`/pesticide/${pesticide.id}`}>
+            className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md overflow-hidden hover:shadow-xl transition h-[400px] flex flex-col group"
+          >
+            <Link to={`/fertilizer/${pesticide.id}`} className="bg-white">
               <img
                 src={pesticide.image}
                 alt={pesticide.name}
-                className="w-full h-[240px] object-contain p-2 group-hover:scale-95 transition-transform duration-300"
+                className="w-full h-[240px] object-contain p-4 bg-white group-hover:scale-105 transition-transform duration-300"
               />
             </Link>
 

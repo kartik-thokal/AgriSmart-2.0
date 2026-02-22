@@ -11,15 +11,15 @@ function Fertilizer() {
                 {fertilizerData.map((fertilizer) => (
                     <div
                         key={fertilizer.id}
-                        className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md overflow-hidden hover:shadow-xl transition h-[400px] flex flex-col"                    >
-                        <Link to={`/fertilizer/${fertilizer.id}`}>
+                        className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md overflow-hidden hover:shadow-xl transition h-[400px] flex flex-col group"
+                    >
+                        <Link to={`/fertilizer/${fertilizer.id}`} className="bg-white">
                             <img
                                 src={fertilizer.image}
                                 alt={fertilizer.name}
-                                className="w-full h-[240px] object-contain p-2 group-hover:scale-95 transition-transform duration-300"
+                                className="w-full h-[240px] object-contain p-4 bg-white group-hover:scale-105 transition-transform duration-300"
                             />
                         </Link>
-
                         <div className="p-4 flex flex-col flex-grow">
                             <h2 className="text-lg font-semibold">
                                 {fertilizer.name}
