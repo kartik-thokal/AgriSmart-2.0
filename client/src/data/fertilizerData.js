@@ -7,265 +7,96 @@ import Vermicompost from "../assets/fertilizer/organic.jpg"
 import Zinc from "../assets/fertilizer/zinc.jpg"
 import BioFertilizer from "../assets/fertilizer/bio.jpg"
 
-
-
 const fertilizerData = [
   {
     id: 1,
     name: "Urea Fertilizer",
-    price: 266,
+    price: 290,
     image: Urea,
-    description:
-      "High-quality nitrogen-rich urea fertilizer designed to promote rapid plant growth and improved leaf development. It enhances chlorophyll formation, boosts crop vigor, and increases overall yield potential. Suitable for a wide range of crops and soil types, ensuring balanced nutrient absorption and sustainable productivity.",
-  
+    description: "High-nitrogen granules for vigorous leaf growth and rapid vegetative development. Essential for early-stage crop boosting.",
     sizes: [
-  {
-    label: "1 Kg",
-    price: 1200,
-    originalPrice: 1400,
-    discount: 10,
-    bestSeller: false,
-  },
-   {
-    label: "3 Kg",
-    price: 3500,
-    originalPrice: 5000,
-    discount: 15,
-    bestSeller: false,
-  },
-  {
-    label: "5 Kg",
-    price: 5500,
-    originalPrice: 7000,
-    discount: 20,
-    bestSeller: true,
-  },
-] 
-      
+      { label: "1 Kg", price: 290, originalPrice: 320, discount: 9, bestSeller: false },
+      { label: "5 Kg", price: 1350, originalPrice: 1550, discount: 13, bestSeller: true },
+      { label: "25 Kg", price: 6200, originalPrice: 7500, discount: 17, bestSeller: false },
+    ]
   },
   {
     id: 2,
     name: "DAP Fertilizer",
-    price: 1350,
+    price: 1450,
     image: DAP,
-    description:
-      "Di-Ammonium Phosphate (DAP) fertilizer provides essential nitrogen and phosphorus for strong root development and early plant establishment. It improves flowering, fruiting, and overall crop strength. Ideal for cereals, pulses, and vegetable crops, supporting higher productivity and improved soil fertility.",
-
-        sizes: [
-  {
-    label: "1 Kg",
-    price: 1200,
-    originalPrice: 1400,
-    discount: 10,
-    bestSeller: false,
-  },
-   {
-    label: "3 Kg",
-    price: 3500,
-    originalPrice: 5000,
-    discount: 15,
-    bestSeller: false,
-  },
-  {
-    label: "5 Kg",
-    price: 5500,
-    originalPrice: 7000,
-    discount: 20,
-    bestSeller: true,
-  },
-] 
+    description: "Premium phosphate-rich fertilizer for superior root system establishment and strong stem formation.",
+    sizes: [
+      { label: "5 Kg", price: 1450, originalPrice: 1600, discount: 9, bestSeller: false },
+      { label: "10 Kg", price: 2800, originalPrice: 3200, discount: 12, bestSeller: true },
+      { label: "50 Kg", price: 13500, originalPrice: 16000, discount: 15, bestSeller: false },
+    ]
   },
   {
     id: 3,
-    name: "NPK Fertilizer",
-    price: 1200,
+    name: "NPK 19:19:19",
+    price: 320,
     image: NPK,
-    description:
-      "Balanced NPK fertilizer enriched with Nitrogen (N), Phosphorus (P), and Potassium (K) to ensure complete plant nutrition. It supports root growth, flowering, fruit setting, and resistance against environmental stress. Suitable for all stages of crop growth for maximum yield and quality produce.",
-
-     sizes: [
-  {
-    label: "1 Kg",
-    price: 1200,
-    originalPrice: 1400,
-    discount: 10,
-    bestSeller: false,
-  },
-   {
-    label: "3 Kg",
-    price: 3500,
-    originalPrice: 5000,
-    discount: 15,
-    bestSeller: false,
-  },
-  {
-    label: "5 Kg",
-    price: 5500,
-    originalPrice: 7000,
-    discount: 20,
-    bestSeller: true,
-  },
-] 
+    description: "A balanced NPK formula providing equal parts Nitrogen, Phosphorus, and Potassium for uniform plant health.",
+    sizes: [
+      { label: "1 Kg", price: 320, originalPrice: 350, discount: 8, bestSeller: true },
+      { label: "5 Kg", price: 1500, originalPrice: 1750, discount: 14, bestSeller: false },
+    ]
   },
   {
     id: 4,
     name: "Potash Fertilizer",
-    price: 950,
+    price: 450,
     image: Potash,
-    description:
-      "Premium potash fertilizer formulated to improve crop resistance to drought, disease, and environmental stress. It enhances water retention, strengthens plant stems, and improves grain and fruit quality. Essential for crops requiring high potassium levels for better productivity.",
-
-sizes: [
-  {
-    label: "1 Kg",
-    price: 1200,
-    originalPrice: 1400,
-    discount: 10,
-    bestSeller: false,
-  },
-   {
-    label: "3 Kg",
-    price: 3500,
-    originalPrice: 5000,
-    discount: 15,
-    bestSeller: false,
-  },
-  {
-    label: "5 Kg",
-    price: 5500,
-    originalPrice: 7000,
-    discount: 20,
-    bestSeller: true,
-  },
-] 
+    description: "Improves fruit quality, sugar content, and crop resistance against drought and fungal diseases.",
+    sizes: [
+      { label: "1 Kg", price: 450, originalPrice: 500, discount: 10, bestSeller: false },
+      { label: "5 Kg", price: 2100, originalPrice: 2500, discount: 16, bestSeller: true },
+    ]
   },
   {
     id: 5,
     name: "Organic Compost",
-    price: 600,
+    price: 180,
     image: Compost,
-    description:
-      "Eco-friendly organic compost made from natural biodegradable materials to enrich soil fertility and improve soil structure. It enhances microbial activity, increases water-holding capacity, and provides slow-release nutrients for sustainable farming practices and long-term soil health.",
-
-     sizes: [
-  {
-    label: "1 Kg",
-    price: 1200,
-    originalPrice: 1400,
-    discount: 10,
-    bestSeller: false,
-  },
-   {
-    label: "3 Kg",
-    price: 3500,
-    originalPrice: 5000,
-    discount: 15,
-    bestSeller: false,
-  },
-  {
-    label: "5 Kg",
-    price: 5500,
-    originalPrice: 7000,
-    discount: 20,
-    bestSeller: true,
-  },
-] 
+    description: "Fully decomposed organic matter that improves soil aeration, water retention, and microbial activity.",
+    sizes: [
+      { label: "5 Kg", price: 180, originalPrice: 220, discount: 18, bestSeller: false },
+      { label: "20 Kg", price: 650, originalPrice: 850, discount: 23, bestSeller: true },
+    ]
   },
   {
     id: 6,
     name: "Vermicompost",
-    price: 750,
+    price: 250,
     image: Vermicompost,
-    description:
-      "Nutrient-rich vermicompost produced through natural earthworm processing, offering balanced macro and micronutrients. It improves soil aeration, root growth, and nutrient uptake while enhancing crop quality and yield. Ideal for organic farming and vegetable cultivation.",
-
-sizes: [
-  {
-    label: "1 Kg",
-    price: 1200,
-    originalPrice: 1400,
-    discount: 10,
-    bestSeller: false,
-  },
-   {
-    label: "3 Kg",
-    price: 3500,
-    originalPrice: 5000,
-    discount: 15,
-    bestSeller: false,
-  },
-  {
-    label: "5 Kg",
-    price: 5500,
-    originalPrice: 7000,
-    discount: 20,
-    bestSeller: true,
-  },
-] 
+    description: "A super-food for soil, rich in earthworm castings, plant growth hormones, and essential humic acids.",
+    sizes: [
+      { label: "5 Kg", price: 250, originalPrice: 300, discount: 16, bestSeller: true },
+      { label: "20 Kg", price: 900, originalPrice: 1200, discount: 25, bestSeller: false },
+    ]
   },
   {
     id: 7,
     name: "Zinc Sulphate",
-    price: 500,
+    price: 380,
     image: Zinc,
-    description:
-      "High-purity zinc sulphate fertilizer formulated to correct zinc deficiency in crops. It supports enzyme activity, improves leaf growth, and enhances overall plant metabolism. Suitable for application in various crops to ensure better grain formation and productivity.",
-
-sizes: [
-  {
-    label: "1 Kg",
-    price: 1200,
-    originalPrice: 1400,
-    discount: 10,
-    bestSeller: false,
-  },
-   {
-    label: "3 Kg",
-    price: 3500,
-    originalPrice: 5000,
-    discount: 15,
-    bestSeller: false,
-  },
-  {
-    label: "5 Kg",
-    price: 5500,
-    originalPrice: 7000,
-    discount: 20,
-    bestSeller: true,
-  },
-] 
+    description: "Crucial micro-nutrient to prevent leaf yellowing and support enzyme systems for better photosynthesis.",
+    sizes: [
+      { label: "1 Kg", price: 380, originalPrice: 420, discount: 9, bestSeller: false },
+      { label: "5 Kg", price: 1800, originalPrice: 2100, discount: 14, bestSeller: true },
+    ]
   },
   {
     id: 8,
-    name: "Bio Fertilizer",
-    price: 850,
+    name: "Liquid Bio-Fertilizer",
+    price: 550,
     image: BioFertilizer,
-    description:
-      "Biological fertilizer enriched with beneficial microorganisms that enhance soil fertility and nutrient availability. It promotes natural nitrogen fixation, improves root development, and supports sustainable agricultural practices for long-term crop productivity.",
-
-sizes: [
-  {
-    label: "1 Kg",
-    price: 1200,
-    originalPrice: 1400,
-    discount: 10,
-    bestSeller: false,
-  },
-   {
-    label: "3 Kg",
-    price: 3500,
-    originalPrice: 5000,
-    discount: 15,
-    bestSeller: false,
-  },
-  {
-    label: "5 Kg",
-    price: 5500,
-    originalPrice: 7000,
-    discount: 20,
-    bestSeller: true,
-  },
-] 
+    description: "Contains live beneficial bacteria that convert atmospheric nitrogen into a form easily absorbed by plants.",
+    sizes: [
+      { label: "500 ml", price: 550, originalPrice: 600, discount: 8, bestSeller: false },
+      { label: "1 Liter", price: 950, originalPrice: 1100, discount: 13, bestSeller: true },
+    ]
   },
 ];
 

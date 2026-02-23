@@ -7,265 +7,96 @@ import Miticide from '../assets/pesticide/miticide.jpg'
 import Termiticide from '../assets/pesticide/termiticide.jpg'
 import GrowthRegulator from '../assets/pesticide/plantgrowth.jpg'
 
-
-const perticideData = [
+const pesticideData = [
   {
     id: 1,
-    name: "Insecticide",
-    price: 850,
+    name: "Broad-Spectrum Insecticide",
+    price: 450,
     image: Insecticide,
-    description:
-      "Effective broad-spectrum insecticide formulated to control a wide range of harmful insects and pests affecting crops. It provides quick action and long-lasting protection, ensuring healthier plant growth and reduced crop damage. Suitable for vegetables, cereals, and fruit crops with recommended dosage for safe and efficient application.",
-
-      sizes: [
-  {
-    label: "1 Kg",
-    price: 1200,
-    originalPrice: 1400,
-    discount: 10,
-    bestSeller: false,
-  },
-   {
-    label: "3 Kg",
-    price: 3500,
-    originalPrice: 5000,
-    discount: 15,
-    bestSeller: false,
-  },
-  {
-    label: "5 Kg",
-    price: 5500,
-    originalPrice: 7000,
-    discount: 20,
-    bestSeller: true,
-  },
-] 
+    description: "Fast-acting formula to eliminate aphids, caterpillars, and beetles. Provides a protective shield for up to 21 days.",
+    sizes: [
+      { label: "250 ml", price: 450, originalPrice: 550, discount: 18, bestSeller: false },
+      { label: "500 ml", price: 850, originalPrice: 1050, discount: 19, bestSeller: true },
+      { label: "1 Liter", price: 1600, originalPrice: 2000, discount: 20, bestSeller: false },
+    ]
   },
   {
     id: 2,
-    name: "Herbicide",
-    price: 950,
+    name: "Selective Herbicide",
+    price: 380,
     image: Herbicide,
-    description:
-      "Powerful herbicide designed to control unwanted weeds that compete with crops for nutrients, sunlight, and water. It ensures clean fields, promotes better crop establishment, and improves overall productivity. Ideal for pre-emergence and post-emergence weed management in various agricultural systems.",
-
-      sizes: [
-  {
-    label: "1 Kg",
-    price: 1200,
-    originalPrice: 1400,
-    discount: 10,
-    bestSeller: false,
-  },
-   {
-    label: "3 Kg",
-    price: 3500,
-    originalPrice: 5000,
-    discount: 15,
-    bestSeller: false,
-  },
-  {
-    label: "5 Kg",
-    price: 5500,
-    originalPrice: 7000,
-    discount: 20,
-    bestSeller: true,
-  },
-] 
+    description: "Targets tough weeds while keeping your crops safe. Ideal for pre-emergence and post-emergence weed control.",
+    sizes: [
+      { label: "500 ml", price: 380, originalPrice: 450, discount: 15, bestSeller: true },
+      { label: "1 Liter", price: 720, originalPrice: 900, discount: 20, bestSeller: false },
+    ]
   },
   {
     id: 3,
-    name: "Fungicide",
-    price: 900,
+    name: "Systemic Fungicide",
+    price: 520,
     image: Fungicide,
-    description:
-      "High-performance fungicide formulated to prevent and control fungal diseases such as blight, rust, and mildew. It enhances plant immunity, protects leaves and stems, and ensures healthy crop development. Suitable for fruits, vegetables, and field crops under diverse climatic conditions.",
-
-      sizes: [
-  {
-    label: "1 Kg",
-    price: 1200,
-    originalPrice: 1400,
-    discount: 10,
-    bestSeller: false,
-  },
-   {
-    label: "3 Kg",
-    price: 3500,
-    originalPrice: 5000,
-    discount: 15,
-    bestSeller: false,
-  },
-  {
-    label: "5 Kg",
-    price: 5500,
-    originalPrice: 7000,
-    discount: 20,
-    bestSeller: true,
-  },
-] 
+    description: "Absorbed by the plant to fight diseases like blight and powdery mildew from the inside out.",
+    sizes: [
+      { label: "250 ml", price: 520, originalPrice: 600, discount: 13, bestSeller: false },
+      { label: "1 Liter", price: 1900, originalPrice: 2400, discount: 21, bestSeller: true },
+    ]
   },
   {
     id: 4,
-    name: "Rodenticide",
-    price: 700,
+    name: "Grain Guard Rodenticide",
+    price: 150,
     image: Rodenticide,
-    description:
-      "Effective rodent control solution designed to protect stored grains and field crops from rat and rodent damage. It ensures long-lasting control and reduces post-harvest losses. Easy to apply and highly effective when used according to recommended agricultural guidelines.",
-
-      sizes: [
-  {
-    label: "1 Kg",
-    price: 1200,
-    originalPrice: 1400,
-    discount: 10,
-    bestSeller: false,
-  },
-   {
-    label: "3 Kg",
-    price: 3500,
-    originalPrice: 5000,
-    discount: 15,
-    bestSeller: false,
-  },
-  {
-    label: "5 Kg",
-    price: 5500,
-    originalPrice: 7000,
-    discount: 20,
-    bestSeller: true,
-  },
-] 
+    description: "Highly attractive bait blocks for effective rodent management in storage rooms and field perimeters.",
+    sizes: [
+      { label: "100g Pack", price: 150, originalPrice: 180, discount: 16, bestSeller: true },
+      { label: "1 Kg Bucket", price: 1200, originalPrice: 1500, discount: 20, bestSeller: false },
+    ]
   },
   {
     id: 5,
-    name: "Bio Pesticide",
-    price: 1000,
+    name: "Neem-Based Bio Pesticide",
+    price: 280,
     image: BioPesticide,
-    description:
-      "Eco-friendly bio pesticide formulated using natural ingredients and beneficial microorganisms to control pests without harming the environment. It supports sustainable farming practices, enhances crop safety, and reduces chemical residue in produce. Ideal for organic and integrated pest management systems.",
-
-      sizes: [
-  {
-    label: "1 Kg",
-    price: 1200,
-    originalPrice: 1400,
-    discount: 10,
-    bestSeller: false,
-  },
-   {
-    label: "3 Kg",
-    price: 3500,
-    originalPrice: 5000,
-    discount: 15,
-    bestSeller: false,
-  },
-  {
-    label: "5 Kg",
-    price: 5500,
-    originalPrice: 7000,
-    discount: 20,
-    bestSeller: true,
-  },
-] 
+    description: "100% organic cold-pressed neem oil. Safe for beneficial insects like bees while repelling over 200 species of pests.",
+    sizes: [
+      { label: "500 ml", price: 280, originalPrice: 350, discount: 20, bestSeller: true },
+      { label: "1 Liter", price: 500, originalPrice: 700, discount: 28, bestSeller: false },
+    ]
   },
   {
     id: 6,
-    name: "Miticide",
-    price: 880,
+    name: "Horticultural Miticide",
+    price: 650,
     image: Miticide,
-    description:
-      "Specialized miticide developed to control mites that damage crops by feeding on plant tissues. It ensures rapid action, long-lasting protection, and improved plant health. Suitable for horticultural crops, vegetables, and fruit plantations with effective resistance management.",
-
-      sizes: [
-  {
-    label: "1 Kg",
-    price: 1200,
-    originalPrice: 1400,
-    discount: 10,
-    bestSeller: false,
-  },
-   {
-    label: "3 Kg",
-    price: 3500,
-    originalPrice: 5000,
-    discount: 15,
-    bestSeller: false,
-  },
-  {
-    label: "5 Kg",
-    price: 5500,
-    originalPrice: 7000,
-    discount: 20,
-    bestSeller: true,
-  },
-] 
+    description: "Specifically engineered to eradicate spider mites and rust mites in greenhouses and fruit orchards.",
+    sizes: [
+      { label: "250 ml", price: 650, originalPrice: 750, discount: 13, bestSeller: false },
+      { label: "500 ml", price: 1150, originalPrice: 1400, discount: 18, bestSeller: true },
+    ]
   },
   {
     id: 7,
-    name: "Termiticide",
-    price: 920,
+    name: "Soil Barrier Termiticide",
+    price: 900,
     image: Termiticide,
-    description:
-      "Advanced termiticide solution designed to protect crops and soil from termite infestation. It creates a protective barrier in the soil, preventing damage to roots and improving overall crop stability. Recommended for use in plantations and field crops vulnerable to termite attacks.",
-
-      sizes: [
-  {
-    label: "1 Kg",
-    price: 1200,
-    originalPrice: 1400,
-    discount: 10,
-    bestSeller: false,
-  },
-   {
-    label: "3 Kg",
-    price: 3500,
-    originalPrice: 5000,
-    discount: 15,
-    bestSeller: false,
-  },
-  {
-    label: "5 Kg",
-    price: 5500,
-    originalPrice: 7000,
-    discount: 20,
-    bestSeller: true,
-  },
-] 
+    description: "Creates an undetectable lethal zone in the soil to prevent termite attacks on roots and wooden structures.",
+    sizes: [
+      { label: "1 Liter", price: 900, originalPrice: 1100, discount: 18, bestSeller: true },
+      { label: "5 Liters", price: 4200, originalPrice: 5500, discount: 23, bestSeller: false },
+    ]
   },
   {
     id: 8,
-    name: "Plant Growth Regulator",
-    price: 1100,
+    name: "Flower Booster Regulator",
+    price: 320,
     image: GrowthRegulator,
-    description:
-      "High-quality plant growth regulator that enhances flowering, fruit setting, and overall crop development. It improves plant structure, reduces premature flower drop, and increases yield potential when applied at recommended growth stages.",
-
-      sizes: [
-  {
-    label: "1 Kg",
-    price: 1200,
-    originalPrice: 1400,
-    discount: 10,
-    bestSeller: false,
-  },
-   {
-    label: "3 Kg",
-    price: 3500,
-    originalPrice: 5000,
-    discount: 15,
-    bestSeller: false,
-  },
-  {
-    label: "5 Kg",
-    price: 5500,
-    originalPrice: 7000,
-    discount: 20,
-    bestSeller: true,
-  },
-] 
+    description: "Hormonal stimulant to prevent flower drop and increase fruit size. Best used during the budding stage.",
+    sizes: [
+      { label: "100 ml", price: 320, originalPrice: 400, discount: 20, bestSeller: true },
+      { label: "500 ml", price: 1400, originalPrice: 1800, discount: 22, bestSeller: false },
+    ]
   },
 ];
 
-export default perticideData;
-
+export default pesticideData;
